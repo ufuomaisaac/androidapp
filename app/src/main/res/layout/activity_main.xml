@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="121dp">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+        <TextView
+            android:id="@+id/johnDeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_toRightOf="@id/profile"
+            android:text="John Deo"
+            android:textSize="26sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/johndeo.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/johnDeo"
+            android:layout_toRightOf="@id/profile"
+            android:text="johndeo.com"
+            android:textSize="22sp">
+
+        </TextView>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profile"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="20dp"
+            android:text="About"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="10sp"
+            android:text="Contrary to popular belief, Lorem Ipsum is not simply random text. it has roots in a piece of classical professor Read More"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/body"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/divider2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/divider2"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@id/profile"
+
+            app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="325dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/imageView2"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@android:drawable/btn_dropdown" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
